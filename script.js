@@ -11,3 +11,16 @@
 })(jQuery);
 
 </script>
+
+//this below will removed all a hyperlink which has class name = disabled
+
+(function($){
+	$(document).ready(function(){
+	   $(".mlfi-wrapper a").each(function(){
+        //if($(this).hasClass("disabled")){
+            $(this).removeAttr("href");
+        }
+    });	
+	}); // end of bracket
+    
+})(jQuery);
